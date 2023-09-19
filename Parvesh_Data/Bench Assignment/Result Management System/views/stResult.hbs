@@ -1,0 +1,19 @@
+{{>navbar }}
+<div class = "container" >
+    
+     <a href='/api/student' class="btn btn-primary mt-3">Back</a>
+    
+    <h1 style="text-align:center">Result</h1>
+    <div class= "d-flex justify-content-center" style="margin-left:100px; margin-top:60px; background-color:offwhite;" >
+        <div class="card w-50">
+            <div class="card-body">
+                <h3>RollNo : &nbsp; &nbsp; {{result.rollno}}</h3>
+                <h3>Name   : &nbsp; &nbsp; {{result.name}}  </h3>
+                <h3>DOB    : &nbsp; &nbsp; {{result.dob}}  </h3>
+                <h3>Score   : &nbsp; &nbsp; {{result.score}}  </h3>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>

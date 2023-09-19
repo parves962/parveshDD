@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UserPage</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="row-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Book Reading Application</a>
+            <ul>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Book/CreateEvent">Create Event <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" asp-controller="Home" asp-action="Signup" style="margin-right:20px;">SignUp</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" asp-controller="Home" asp-action="Login">Login</button>
+            </form>
+            <a class="nav-link" style="margin-left:500px;" href="#">Logout</a>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+D:\parvesh-kaushik\DSA Assignment\Stack\bin\Debug\Stack.exe.config
+D:\parvesh-kaushik\DSA Assignment\Stack\bin\Debug\Stack.exe
+D:\parvesh-kaushik\DSA Assignment\Stack\bin\Debug\Stack.pdb
+D:\parvesh-kaushik\DSA Assignment\Stack\obj\Debug\Stack.csproj.CoreCompileInputs.cache
+D:\parvesh-kaushik\DSA Assignment\Stack\obj\Debug\Stack.exe
+D:\parvesh-kaushik\DSA Assignment\Stack\obj\Debug\Stack.pdb

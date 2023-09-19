@@ -1,0 +1,93 @@
+﻿@model EntityModel.EventModel
+
+@*@{
+    Layout = null;
+}*@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateEvent</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <h4>EventModel</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="CreateEvent">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label"></label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label"></label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Location" class="control-label"></label>
+                        <input asp-for="Location" class="form-control" />
+                        <span asp-validation-for="Location" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StartTime" class="control-label"></label>
+                        <input asp-for="StartTime" class="form-control" />
+                        <span asp-validation-for="StartTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Type" class="control-label"></label>
+                        <input type="radio" name="Type" value="Public" checked />&nbsp;Public&nbsp;
+                        <input type="radio" name="Type" value="Private" />&nbsp;Private&nbsp;
+                        <span asp-validation-for="Type" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Duration" class="control-label"></label>
+                        <input asp-for="Duration" class="form-control" />
+                        <span asp-validation-for="Duration" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="OtherDetails" class="control-label"></label>
+                        <input asp-for="OtherDetails" class="form-control" />
+                        <span asp-validation-for="OtherDetails" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="InvitedBy" class="control-label"></label>
+                        <input asp-for="InvitedBy" class="form-control" />
+                        <span asp-validation-for="InvitedBy" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="UserId" class="control-label"></label>
+                        <input asp-for="UserId" class="form-control" />
+                        <span asp-validation-for="UserId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="RegistereEmail" class="control-label"></label>
+                        <input asp-for="RegistereEmail" class="form-control" />
+                        <span asp-validation-for="RegistereEmail" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" onclick="CreateEvent()" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

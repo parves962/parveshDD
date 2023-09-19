@@ -1,0 +1,6 @@
+D:\parvesh-kaushik\C# Assignment\Assignment4\obj\Debug\Assignment4.csproj.CoreCompileInputs.cache
+D:\parvesh-kaushik\C# Assignment\Assignment4\bin\Debug\Assignment4.exe.config
+D:\parvesh-kaushik\C# Assignment\Assignment4\bin\Debug\Assignment4.exe
+D:\parvesh-kaushik\C# Assignment\Assignment4\bin\Debug\Assignment4.pdb
+D:\parvesh-kaushik\C# Assignment\Assignment4\obj\Debug\Assignment4.exe
+D:\parvesh-kaushik\C# Assignment\Assignment4\obj\Debug\Assignment4.pdb

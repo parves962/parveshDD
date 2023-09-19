@@ -1,0 +1,13 @@
+D:\MVC Assignment\EntityModel\bin\Debug\netcoreapp3.1\EntityModel.deps.json
+D:\MVC Assignment\EntityModel\bin\Debug\netcoreapp3.1\EntityModel.dll
+D:\MVC Assignment\EntityModel\bin\Debug\netcoreapp3.1\EntityModel.pdb
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.AssemblyInfoInputs.cache
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.AssemblyInfo.cs
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.csproj.CoreCompileInputs.cache
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.dll
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.pdb
+D:\MVC Assignment\EntityModel\bin\Debug\netcoreapp3.1\EntityModel.runtimeconfig.json
+D:\MVC Assignment\EntityModel\bin\Debug\netcoreapp3.1\EntityModel.runtimeconfig.dev.json
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.genruntimeconfig.cache
+D:\MVC Assignment\EntityModel\obj\Debug\netcoreapp3.1\EntityModel.csproj.AssemblyReference.cache

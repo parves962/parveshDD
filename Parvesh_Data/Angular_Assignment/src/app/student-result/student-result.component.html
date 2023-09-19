@@ -1,0 +1,12 @@
+<div *ngIf="resultdata" >
+    <app-header></app-header>
+    <!-- <a style="margin-top:20px; margin-left:20px;" routerLink="student-login">Back</a>  -->
+    <button style="margin-top:20px; margin-left:20px;" (click)="GotoLogin()">Back</button>
+    <div class="col-sm-4"style="margin-left:500px; margin-top:60px; background-color:offwhite;" *ngFor="let result1 of resultdata">
+        <h1>Result</h1>
+        <h3>RollNo : {{result1.RollNo}}</h3>
+        <h3>Name   : {{result1.Name}}  </h3>
+        <h3>DOB    : {{result1.DOB}}  </h3>
+        <h3>Score   : {{result1.Score}}  </h3>
+    </div>
+</div>

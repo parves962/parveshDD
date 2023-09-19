@@ -1,0 +1,33 @@
+{{>navbar }}
+<div class="container">
+    {{#if messages}}     
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{this.messages}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/if}}
+    <a href='/api/allResult' class="btn btn-primary mt-3">Back</a>
+    <div class="d-flex justify-content-center">
+        <div style="margin-top:100px; margin-left: 100px;" class="col-sm-4">
+            <h2>Find Result</h2>
+            <form action="/api/oneResult" method="post">
+                <div class="form-group">
+                    <label>RollNo</label>
+                    <input type="number" class="form-control" name="rollno" id="nameinput" required="required" placeholder="RollNo">
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">DOB</label>
+                    <input type="date" class="form-control" id="exampleInputPassword1" name="dob"  required="required" placeholder="Name">
+
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button Style="margin-left:10px;" class="btn btn-primary">Clear</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

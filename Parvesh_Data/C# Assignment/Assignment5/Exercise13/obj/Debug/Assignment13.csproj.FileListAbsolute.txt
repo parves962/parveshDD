@@ -1,0 +1,7 @@
+D:\parvesh-kaushik\C# Assignment\Assignment13\bin\Debug\Assignment13.exe.config
+D:\parvesh-kaushik\C# Assignment\Assignment13\bin\Debug\Assignment13.exe
+D:\parvesh-kaushik\C# Assignment\Assignment13\bin\Debug\Assignment13.pdb
+D:\parvesh-kaushik\C# Assignment\Assignment13\obj\Debug\Assignment13.csproj.AssemblyReference.cache
+D:\parvesh-kaushik\C# Assignment\Assignment13\obj\Debug\Assignment13.csproj.CoreCompileInputs.cache
+D:\parvesh-kaushik\C# Assignment\Assignment13\obj\Debug\Assignment13.exe
+D:\parvesh-kaushik\C# Assignment\Assignment13\obj\Debug\Assignment13.pdb

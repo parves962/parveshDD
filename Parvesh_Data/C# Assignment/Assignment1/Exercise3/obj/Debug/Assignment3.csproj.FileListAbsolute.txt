@@ -1,0 +1,7 @@
+D:\parvesh-kaushik\C# Assignment\Assignment3\obj\Debug\Assignment3.csproj.AssemblyReference.cache
+D:\parvesh-kaushik\C# Assignment\Assignment3\obj\Debug\Assignment3.csproj.CoreCompileInputs.cache
+D:\parvesh-kaushik\C# Assignment\Assignment3\bin\Debug\Assignment3.exe.config
+D:\parvesh-kaushik\C# Assignment\Assignment3\bin\Debug\Assignment3.exe
+D:\parvesh-kaushik\C# Assignment\Assignment3\bin\Debug\Assignment3.pdb
+D:\parvesh-kaushik\C# Assignment\Assignment3\obj\Debug\Assignment3.exe
+D:\parvesh-kaushik\C# Assignment\Assignment3\obj\Debug\Assignment3.pdb

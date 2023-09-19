@@ -1,0 +1,33 @@
+{{>navbar }}
+<div class="container">
+
+  <div class="d-flex justify-content-center">
+
+    <form action='/api/login' method="post">
+      <h3 class="mt-4">Login as Teacher</h3>
+      {{#if messages}}     
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{this.messages}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {{/if}}
+      <br><br>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" id="nameinput" name="name" required="required" placeholder="Name">
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" required="required" name="password"
+          placeholder="Password">
+
+      </div>
+      <br>
+      <div>
+        <button class="btn btn-primary">Login</button>
+      </div>
+    </form>
+  </div>
+
+</div>

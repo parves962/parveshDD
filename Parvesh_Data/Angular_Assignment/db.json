@@ -1,0 +1,46 @@
+{
+  "studentRecord": [
+    {
+      "RollNo": "1",
+      "Name": "Parvesh",
+      "DOB": "09-02-1999",
+      "Score": 100,
+      "id": 2
+    },
+    {
+      "RollNo": "5",
+      "Name": "sdsf",
+      "DOB": "2022-11-30",
+      "Score": "dsd",
+      "id": 3
+    },
+    {
+      "RollNo": "5",
+      "Name": "demo",
+      "DOB": "2022-11-29",
+      "Score": "67",
+      "id": 5
+    },
+    {
+      "RollNo": "6",
+      "Name": "gdfd",
+      "DOB": "2030-09-09",
+      "Score": "90",
+      "id": 6
+    },
+    {
+      "RollNo": "7",
+      "Name": "demo1",
+      "DOB": "2022-11-23",
+      "Score": "67",
+      "id": 7
+    }
+  ],
+  "teacherRecord": [
+    {
+      "id": 1,
+      "name": "Ashish Sharma",
+      "password": "Ashish@12345"
+    }
+  ]
+}

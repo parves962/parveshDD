@@ -1,0 +1,43 @@
+{{>navbar message=true }}
+<div class="container">
+    <app-header></app-header>
+    <br>
+    <h1>Student-Record </h1>
+    <br>
+    <div class="row">
+        <h5 class="col-10 ">Total Students : {{total}}</h5>
+        <a  href="/api/addRecord" class="col-2 btn btn-primary">Add Record</a>
+    </div>
+    
+    
+    <br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">RollNo</th>
+            <th scope="col">Name</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Score</th>
+            <th scope="col">Operations</th>
+        </tr>
+        </thead>
+        <tbody >
+        {{#each result}}
+        <tr>
+            
+            <td>{{this.rollno}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.dob}}</td>
+            <td>{{this.score}}</td>
+            <td>
+                <a  href="/api/editRecord/{{this.id}}" class="btn btn-light btn-small"><i 
+                class="bi bi-pencil" style="color:green;">Edit</i></a>
+                &nbsp;
+                <a  href="/api/delete/{{this.id}}" class="btn btn-light btn-small"><i 
+                class="bi bi-trash" style="color:red;">Delete</i></a>
+            </td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>

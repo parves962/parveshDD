@@ -1,0 +1,151 @@
+﻿@model EntityModel.EventModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h4>EventModel</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Date)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Date)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Location)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Location)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.StartTime)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.StartTime)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Type)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Type)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Duration)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Duration)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.OtherDetails)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.OtherDetails)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.InvitedBy)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.InvitedBy)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UserId)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.UserId)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.RegistereEmail)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RegistereEmail)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+            @Html.ActionLink("Back to MyEvent", "MyEvent")
+        </div>
+
+        @if (Model.Comment.Count != 0)
+        {
+            <h3>Previous Comments</h3>
+            @foreach (var cmd in Model.Comment)
+            {
+                <div class="row-sm-6">
+                    <div class="container">
+                        <div class="card" style="background-color:whitesmoke">
+                            <div class="card-body">
+                                <h5 class="card-title">@cmd.UserName</h5>
+                                <p class="card-text">@cmd.Timestamp</p>
+                                <p class="card-text">@cmd.Comment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        }
+
+        <div class="container">
+            <div class="col-md-12" align="center" style="width: 50%">
+                @using (Html.BeginForm("AddComment", "Comment", new { EventId = Model.Id }))
+                {
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p>
+                                    <a class="float-left">
+                                        <strong class="text-success">Anonymous</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button class="btn btn-success btn-circle text-uppercase" type="submit" value="Post" id="submitComment">
+                                Post Comment
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+
+</body>
+</html>

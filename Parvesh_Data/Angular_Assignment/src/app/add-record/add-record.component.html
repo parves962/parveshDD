@@ -1,0 +1,54 @@
+<div class="container">
+    <app-header></app-header>
+    <br><br>
+    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>H!</strong> New Record has been entered Succesfully
+        <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="d-flex justify-content-center">
+        
+    <form [formGroup]="addRecord" >
+        <h1>Add New Record</h1>
+        <br><br>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputRollNo" class="col-sm-2 col-form-label">RollNo</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control"  formControlName="RollNo"placeholder="rollno">
+            <span class="error" *ngIf ="RollNo?.invalid && RollNo?.touched">Roll No Is not Valid</span>
+            </div>
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="Name" class="form-control" formControlName="Name"placeholder="Name">
+            </div>
+            <span class="error" *ngIf ="Name?.invalid && Name?.touched">Name Is not valid</span>
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputDOB" class="col-sm-2 col-form-label">DOB</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control"  formControlName="DOB" placeholder="DOB">
+            </div>
+            <span class="error" *ngIf ="DOB?.invalid && DOB?.touched">DOB is not valid</span>
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputScore" class="col-sm-2 col-form-label">Score</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control"  formControlName="Score" placeholder="score">
+            </div>
+            <span class="error" *ngIf ="Score?.invalid && Score?.touched">Score is not valid</span>
+        </div>
+        <br><br>
+            
+        <div >
+            <button [disabled]="addRecord.invalid"  (click)="collectRecord()"type="submit" class="btn btn-primary" >Submit</button>
+            <button  (click)="clear()" class="btn btn-primary" style="margin-left:20px;">Clear</button>
+        </div>
+        
+    </form>
+</div>
+</div>
+
+

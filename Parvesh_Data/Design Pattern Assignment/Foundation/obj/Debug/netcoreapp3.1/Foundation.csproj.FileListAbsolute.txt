@@ -1,0 +1,10 @@
+D:\MVC Assignment\Foundation\bin\Debug\netcoreapp3.1\Foundation.deps.json
+D:\MVC Assignment\Foundation\bin\Debug\netcoreapp3.1\Foundation.dll
+D:\MVC Assignment\Foundation\bin\Debug\netcoreapp3.1\Foundation.pdb
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.csproj.AssemblyReference.cache
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.AssemblyInfoInputs.cache
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.AssemblyInfo.cs
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.csproj.CoreCompileInputs.cache
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.dll
+D:\MVC Assignment\Foundation\obj\Debug\netcoreapp3.1\Foundation.pdb

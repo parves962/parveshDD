@@ -1,0 +1,15 @@
+.alert {
+    animation: autoHide 0s ease-in 4s forwards;
+}
+
+@keyframes autoHide {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+
+h1{
+    background-color: blue;
+}

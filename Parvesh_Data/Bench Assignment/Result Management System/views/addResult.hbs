@@ -1,0 +1,59 @@
+{{>navbar message=true }}
+
+<div class="container">
+   
+    <a href='/api/allResult' class="btn btn-primary mt-3">Back</a>
+    <br><br>
+    
+    <div class="d-flex justify-content-center">
+        
+    <form action = "/api/addResult" method = "post" >
+        <h1>Add New Record</h1>
+        {{#if messages}}      
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>{{this.messages}}</strong> 
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {{/if}}
+        
+        
+        <br><br>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputRollNo" class="col-sm-2 col-form-label">RollNo</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control"  name="rollno" required="required" placeholder="rollno">
+           
+            </div>
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="name" required="required" placeholder="Name">
+            </div>
+            
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputDOB" class="col-sm-2 col-form-label">DOB</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control"  name="dob" required="required" placeholder="DOB">
+            </div>
+            
+        </div>
+        <div class="form-group row" style="margin-top:10px;">
+            <label for="inputScore" class="col-sm-2 col-form-label">Score</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control"  name="score" required="required" placeholder="score">
+            </div>
+            
+        </div>
+        <br><br>
+            
+        <div >
+            <button type="submit" class="btn btn-primary" >Submit</button>
+            <button class="btn btn-primary" style="margin-left:20px;">Clear</button>
+        </div>
+        
+    </form>
+</div>
+</div>
+<script>$(".alert").alert('close')</script>
